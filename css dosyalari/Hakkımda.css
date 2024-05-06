@@ -1,24 +1,77 @@
 #Sbaslik{
-    background-color: #1ABC9C;
+   
+    background-color: #3d2f49; 
+    color: rgb(198, 193, 203); 
     margin: 0 0 0 0;
     border: 0 0 0 0;
     padding: 0 0 0 0;
     list-style-type: upper-roman;
     text-align: center;
+    
+    
+    
 }
 
 #hakkimda1{
     display: inline-block;
+    color: aliceblue;
+    background-color: rgb(46, 33, 57);
+
     width: 300px;
     height: 300px;
-    border: 1px solid greenyellow;
-    overflow: hidden;
+    border: 2px solid black;
+    overflow: auto;
+    position: relative;
+    left: 610px;
+    bottom: 208px;
+}
+#liselink{
+    color: aqua;
+
+}
+#liselink:hover{
+    color: blueviolet;
 }
 #resimhak{
     display: inline-block;
     border: 2px solid black;
     width: 300px;
-    height: 400px;
-  
+    height: 300px;
+    position: relative;
+    top: 100px;
+    left :300px;
     
+}
+#sidebar1{
+    display: inline-block;
+    width: 200px;
+    height: 1000px;
+    position: relative;
+    background-color: rgb(79, 63, 94);
+    bottom: 616px;
+    left: 1064px;
+
+}
+#sidebar2{
+    display: inline-block;
+    width: 200px;
+    height: 1000px;
+    position: relative;
+    background-color: rgb(79, 63, 94);
+    bottom: 616px;
+    right: 204px;
+}
+#mainbar{
+    display: inline-block;
+    width: 1200px;
+    height: 1000px;
+    position: relative;
+    background-color: rgb(79, 63, 94);
+    bottom: 1620px;
+    z-index: -10;
+}
+#s1{
+
+    background-color: rgb(46, 33, 57);
+
 }

@@ -1,10 +1,12 @@
 
     nav {
-    background-color: #1ABC9C;
-    margin: 0 0 0 0;
-    border: 0 0 0 0;
-    padding: 0 0 0 0;
-    
+        display: block;
+        background-color: rgb(61, 47, 73);
+        margin: 0 0 0 0;
+        border: 0 0 0 0;
+        padding: 0 0 0 0;
+        
+        z-index: +10;
 }
 
 nav ul {
@@ -15,7 +17,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 
     
 }
@@ -23,14 +25,15 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 5px 30px;
-    color: white;
+    color: rgb(198, 193, 203); 
     
 }
 
 
 nav ul li a:hover {
-    background-color: #107762;
+    background-color: rgb(57, 38, 73);
     text-shadow: 0.7px 0.7px black;
     padding: 12.5px 30px;
+    color: aliceblue;
     
 }
