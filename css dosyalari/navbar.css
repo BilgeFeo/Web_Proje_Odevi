@@ -1,7 +1,12 @@
+    *{
+        text-decoration:none ;
+    }
+
 
     nav {
+        border-bottom: 1px solid black;
         display: block;
-        background-color: rgb(61, 47, 73);
+        background-color:  #4B83A6;;
         margin: 0 0 0 0;
         border: 0 0 0 0;
         padding: 0 0 0 0;
@@ -10,6 +15,7 @@
 }
 
 nav ul {
+    background-color: #4B83A6;
     list-style-type: upper-roman;
     padding: 0;
     margin: 0;
@@ -17,23 +23,26 @@ nav ul {
 }
 
 nav ul li {
+    
     display: inline-block;
 
     
 }
 
 nav ul li a {
+    background-color: #4B83A6;
     display: inline-block;
-    padding: 5px 30px;
-    color: rgb(198, 193, 203); 
-    
+    padding: 0.5vw 3vw;
+    color: #f2f2f2; 
+    font-size: 1.5vw;
 }
 
 
 nav ul li a:hover {
+    border-radius: 5px;
     background-color: rgb(57, 38, 73);
     text-shadow: 0.7px 0.7px black;
-    padding: 12.5px 30px;
-    color: aliceblue;
-    
+    padding: 0.75vw 4vw;
+    color:rgb(255,255,255);
+
 }
