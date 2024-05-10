@@ -4,41 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Ali Samet Armagan 'BilgeFeo' ">
+<meta name="keywords" content="cv,ozgecmis,mirasimiz,anasayfa,sehrim,ali samet armagan">
+
 <title>Ana Sayfa</title>
 
 
-<link rel="stylesheet" href="./css dosyalari/Hakkımda.css">
-<link rel="stylesheet" href="./css dosyalari/navbar.css" >
-
+<!-- Yazi Fontlari-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<!-- Iconlar-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!--Css Dosyalari -->
+<link rel="stylesheet"  href="./css dosyalari/global.css">
+<link rel="stylesheet" href="./css dosyalari/main.css" >
+<link rel="stylesheet" media="(max-width-700px)" href="./css dosyalari/tabletnavbar.css" >
+<link rel="stylesheet" media="(max-width-460px)" href="./css dosyalari/mobilnavbar.css" >
 
 </head>
-<body>
 
-    <header >
-        <h2 id="Sbaslik">Ana Sayfa</h2>
+<body>
+    <header class="bg-font-blue">
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="heading-small"><i class="fa fa-home"></i>Ana Sayfa</h1>
+                
+                <ul>
+                    <li><a href="#index.html"><i class="fa fa-home"></i>Ana Sayfa</a></li>
+                    <li><a href="#OzGecmis.html"><i class="fa-solid fa-person"></i>Öz Geçmiş</a></li>
+                    <li><a href="#Ilgi.html"><i class="fa-solid fa-person-skiing"></i>İlgi</a></li>
+                    <li><a href="#Memleketim.html"><i class="fa-solid fa-city"></i>Şehrim</a></li>
+                    <li><a href="#Iletisim.html"><i class="fa-solid fa-pen-to-square"></i>İletişim</a></li>
+                    <li><a href="#Giris.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Giriş Yap</a></li>
+                </ul>
+    
+    
+            </nav>
+        </div>
+        
+
     </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html" target="_self">Ana sayfa</a></li>
-        <li><a href="Ilgi.html" target="_self">Ilgi Alanlarım</a></li>
-        <li><a href="Memleketim.html" target="_self">Şehrim</a></li>
-        <li><a href="OzGecmis.html" target="_self">Öz Geçmiş</a></li>
-        <li><a href="Iletisim.html" target="_self">Bana Soru Sor</a></li>
-        <li><a href="Giris.html" target="_self">Giriş Yap</a></li>
-    </ul>
-</nav>
-<section class="container">
-    <article class="box">
-        <img src="./images/IMG-20221112-WA0036.jpg" alt="" id="resimhak">
-    </article>
-    <article class="box">
-        
-        Ben Ali Samet Armağan. 16 Ekim 2003 Tarihinde Perşembe günü Kayseri Melikgazi'de doğdum. Çocukluğum Ankara'nın etimesgut ilçesinde geçti. Ilk okulu da bura da bulunan Cahit Zarifoğlu ilk okulunda tamamladım.Daha sonra babamın işi dolayısıyla Urfa'ya taşındık. Burada 4 sene kaldık ve Ortaokul öğrenimimi burada tamamladım. Bu bana farklı kültürler örf ve adetler öğretti. Babam buradan sonra emekli oldu ve tekrar Ankara'ya taşındık. Liseyi Burada Bulunan <a href="https://aaal.meb.k12.tr/" target="_blank" id="liselink">"Ankara Atatürk Anadolu Lisesin'de"</a> okudum ve mezun oldum. Buradan sonra Sakarya da istediğim bölüm olan Bilgisayar Mühendisliği bölümün kazandım. Burada halen okumaktayım.
-    </article>
-</section>
+    <section id="home">
+        <img src="images/IMG-20221112-WA0036.jpg" alt="Ali Samet Armagan">
+        <div class="name">
+            <h2 class="heading-small">Ali Samet Armağan</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere hic pariatur harum, asperiores tempore labore eveniet delectus ducimus quasi sed dolorum tenetur error vitae alias quis, nisi impedit! Nesciunt fuga, nobis dolor unde sint error explicabo veritatis sequi expedita vitae, temporibus eos ratione maxime molestiae perspiciatis quos sunt adipisci aliquid eius ex, nam fugiat? Maiores labore eius consequatur repellat reiciendis. Aperiam assumenda iste fugit excepturi a! Dolor nobis et in rem explicabo repellendus dolores laboriosam earum itaque, reiciendis exercitationem perferendis ullam ratione eum neque quas ea cupiditate! Pariatur iste, laborum iusto similique a molestias? Laboriosam minima repellendus neque optio. Ipsam.</p>
+        </div>
 
-
+    </section>
 
 
 </body>

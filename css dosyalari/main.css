@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:#f2f2f2;
+}
+
+html{
+    font-family: "Open Sans" , sans-serif;
+}
+/* Navigasyon Bari Css Kodlari */
+#navbar{
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 40px;
+
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.5rem;
+}
+#navbar ul li a:hover{
+    background: #2d3c69;
+    border-radius: 6px;
+}
+
+@media(max-width:460px){
+    #navbar{
+        
+        flex-direction: column;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        overflow: hidden;
+        height: 3.5vh;
+        font-size:8px ;
+    }
+    #navbar ul li a{
+        padding: 0.18rem;
+    }
+    .heading-small{
+        font-size: 9px;
+    }
+}
+
+
+/* Icerik CSS */
+
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    border-bottom: 2px;
+}
+
+#home img{
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px ;
+
+}
