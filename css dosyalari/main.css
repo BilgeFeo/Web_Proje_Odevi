@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 a{
     text-decoration: none;
     color:#f2f2f2;
@@ -17,8 +13,8 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.75rem;
-    height: 40px;
+    padding: 0rem 0.75rem;
+    height: 30px;
 
 }
 #navbar ul{
@@ -27,48 +23,100 @@ html{
     align-items: center;
 }
 #navbar ul li a{
-    padding: 0.5rem;
+    padding: 10px;
+    padding-top: 19px;
 }
 #navbar ul li a:hover{
     background: #2d3c69;
     border-radius: 6px;
+    color: #f2f2f2;
+    padding-top: 19px;
 }
 
-@media(max-width:460px){
+@media(max-width:768px){
     #navbar{
-        
         flex-direction: column;
-        padding-top: 0.1rem;
-        padding-bottom: 0.1rem;
+        height: 60px;
+        padding: 0;
+    }
+}
+@media(max-width:598px){
+    #navbar{
+        flex-direction: row;
+        height: 30px;
+    }
+    #navbar ul li a span{
+        display: none;
+    }
+    #navbar ul li a i{
+        color: #f2f2f2;
+       padding-top: 15px;
+        
+    }
+
+    .hakkinda img{
+        border-radius: 1000px;
+        max-width: 200px;
+        max-height: 200px;
+        
+    
+    }
+    .hakyaz1{
+        padding-left: 60px;
         overflow: hidden;
-        height: 3.5vh;
-        font-size:8px ;
-    }
-    #navbar ul li a{
-        padding: 0.18rem;
-    }
-    .heading-small{
-        font-size: 9px;
     }
 }
 
-
-/* Icerik CSS */
-
-#home{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    border-bottom: 2px;
+.hakkinda{
+    padding-top: 6em;
+    max-width: 700px;
+    max-height: 500px;
+    
+    
+ 
 }
 
-#home img{
-    max-width: 50%;
-    height: auto;
-    border-radius: 10px ;
+.hakkinda img{
+    border-radius: 1000px;
+    max-width: 200px;
+    max-height: 200px;
+}
 
+.isim{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.hakkinda1{
+    padding-top: 3em;
+    max-width: 700px;
+    max-height: 500px;
+    
+    
+ 
+}
+
+.hakkinda1 img{
+    border-radius: 1000px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.endbar{
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    background-color: #4B83A6;
+    color: #f2f2f2;
+    text-align: center;
+    
+}
+.endbar a:hover{
+    background-color: #f2f2f2;
+    padding-left: 4px;
+    padding-right: 4px;
+    border:1px solid #4B83A6 ;
+    color:#4B83A6;
+    border-radius: 6px;
 }

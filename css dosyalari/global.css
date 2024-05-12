@@ -12,10 +12,15 @@
 }
 
 .heading-big{
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 /*Colors*/
-
+.otopadding{
+    padding-top: 30px;
+}
+.otopadding2{
+    padding-top: 90px;
+}
 .bg-font-blue{
 
     background:#4B83A6 ;
@@ -27,4 +32,15 @@
 .container{
     max-width: 1100px;
     margin: 0 auto;
+}
+.sehrimimg{
+    max-width: 285px;
+    max-height: 200px;
+    border-radius: 8px;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.usttemargin{
+    margin-top: 5rem;
 }
