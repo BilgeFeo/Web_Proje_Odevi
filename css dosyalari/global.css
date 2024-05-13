@@ -23,7 +23,15 @@
 }
 .bg-font-blue{
 
-    background:#4B83A6 ;
+    background-color: #4B83A6;
+   
+}
+.bg-font-lggray{
+    background-color: #8a8089;
+    
+}
+.bg-font-gray{
+    background:#8a8080 ;
 }
 
 .bg-back-purple{
@@ -43,4 +51,14 @@
 
 .usttemargin{
     margin-top: 5rem;
+}
+
+.yazibelirgin{
+    color: black;
+    border-radius: 8px;
+    border:1px solid black;
+    text-align: center;
+    display: inline;
+    background-color: #f2f2f2;
+    opacity: 70%;
 }

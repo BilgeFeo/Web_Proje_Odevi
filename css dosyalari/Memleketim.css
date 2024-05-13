@@ -29,3 +29,24 @@
     color:black;
     
 }
+
+.cerceve{
+    border:1px solid black;
+    border-radius: 10px;
+    max-width: 50%;
+    max-height: 40%;
+}
+.sinir{
+    width: 100%;
+    height: 40%;
+}
+
+.uzat{
+    max-width: 100%;
+}
+.yazi{
+    color: #f2f2f2;
+}
+.endbar{
+    background-color: #8a8080;
+}
