@@ -23,8 +23,17 @@
 }
 .bg-font-blue{
 
-    background-color: #4B83A6;
+    background-color: #4b83a6;
    
+}
+
+.bg-font-lgblue{
+    background-color: #4DA5DB;
+    
+}
+
+.opensans{
+    font-family: "Open Sans" , sans-serif;  
 }
 .bg-font-lggray{
     background-color: #8a8089;
@@ -61,4 +70,42 @@
     display: inline;
     background-color: #f2f2f2;
     opacity: 70%;
+}
+
+.cerceve{
+    border:1px solid black;
+    border-radius: 10px;
+    max-width: 50%;
+    max-height: 40%;
+}
+
+.ortala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usttemargink{
+    margin-top: 2.5rem;
+}
+
+.yazideis{
+    color: #f2f2f2;
+    
+}
+
+.bg-font-krem{
+    background-color: #FAEBD7;
+}
+.button-bg{
+    /*#04AA6D*/
+    background-color: #04AA6D;
+    color: white;
+}
+.bg-font-f2{
+    background-color: #f2f2f2;
+}
+.button-bg:hover{
+    background-color:white;
+    color: #059862;
 }
