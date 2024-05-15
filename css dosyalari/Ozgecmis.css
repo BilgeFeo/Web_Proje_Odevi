@@ -39,3 +39,7 @@ section img{
 .resim{
     border: 2px solid black;
 }
+
+.okullar a{
+    color: chocolate;
+}
