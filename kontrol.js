@@ -1,4 +1,4 @@
-function kontrolEt() {
+function jsKontrolEt() {
     var isim = document.getElementById("isim").value;
     var soyisim = document.getElementById("soyisim").value;
     var eposta = document.getElementById("eposta").value;
@@ -8,7 +8,7 @@ function kontrolEt() {
     var onay = document.getElementById("onay").checked;
 
     // Tüm alanların dolu olup olmadığını kontrol et
-    if (isim === "" || soyisim === "" || eposta === "" || mesaj === "" || !cinsiyet || okul === "" || !onay) {
+    if (isim === "" || soyisim === "" || eposta === "" || mesaj === "" || !cinsiyet || okul === "Okul Seçiniz" || !onay) {
         alert("Lütfen tüm alanları doldurun ve onay kutusunu işaretleyin.");
         return false;
     }
@@ -20,5 +20,6 @@ function kontrolEt() {
         return false;
     }
 
+    alert("Form verileri geçerli!");
     return true;
 }

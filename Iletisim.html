@@ -23,10 +23,13 @@
 <link rel="stylesheet" href="css dosyalari/Memleketim.css">
 <link rel="stylesheet" href="./css dosyalari/main.css" >
 <link rel="stylesheet" href="./css dosyalari/iletisim.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="angularKontrol.js"></script>
 <script src="kontrol.js"></script>
+<script src="formTemizle.js"></script>
 </head>
 
-<body class="giris">
+<body class="giris" ng-app="myApp" ng-controller="myCtrl">
     <header class="bg-font-blue">
         <div class="container-fluid">
             <nav id="navbar">
@@ -50,37 +53,41 @@
 
 
 
-    <div class="container ortala text-center usttemargink altmarginsil">
+    <div class="container ortala text-center usttemargink altmarginsil" >
 
-        <div class="cerceve iletisimbox">
-            <form action="/submit_form.php" method="post" onsubmit="return kontrolEt()">
+        <div class="cerceve iletisimbox form-group" >
+            <form action="/submit_form.php" method="post" onsubmit="return jsKontrolEt()" ng-submit="angularKontrolEt()" >
 
             
             <label for="isim">İsim:</label><br>
-            <input type="text" id="isim" name="isim"><br>
+            <input type="text" id="isim" name="isim" ng-model="form.isim"><br>
             <label for="soyisim">Soyisim:</label><br>
-            <input type="text" id="soyisim" name="soyisim" ><br>
-            <label for="telefon">E-Posta:</label><br>
-            <input type="text" id="eposta" ><br>
+            <input type="text" ng-model="form.soyisim"  id="soyisim" name="soyisim" ><br>
+            <label for="eposta">E-Posta:</label><br>
+            <input type="text" ng-model="form.eposta"  id="eposta" ><br>
             <label for="mesaj">Mesaj:</label><br>
-            <textarea id="mesaj" name="mesaj" rows="4" cols="50"></textarea><br>
+            <textarea id="mesaj" name="mesaj" class="w-75" rows="4" cols="50" ng-model="form.mesaj"  ></textarea><br>
             
             <label>Cinsiyet:</label><br>
-            <input type="radio" id="erkek" name="cinsiyet" value="erkek" >
+            <input type="radio" id="erkek"  name="cinsiyet" value="erkek" ng-model="form.cinsiyet" >
             <label for="erkek">Erkek</label>
-            <input type="radio" id="kadın" name="cinsiyet" value="kadın">
+            <input type="radio" id="kadın"  name="cinsiyet" value="kadın" ng-model="form.cinsiyet" >
             <label for="kadın">Kadın</label><br>
             <label for="okul">Okul:</label><br>
-            <select id="okul" name="okul" >
-            <option value="sau">Sakarya Üniversitesi</option>
-            <option value="subu">SUBU</option>
-            <option value="kou">Kocaeli Üniversitesi</option>
-            <option value="gazi">Gazi Üniversitesi</option>
-            <option value="eru">Erciyes Üniversitesi</option>
+            <select id="okul"  name="okul" ng-model="form.okul" >
+                <option value="bos">Okul Seçiniz</option>
+                <option value="sau">Sakarya Üniversitesi</option>
+                <option value="subu">SUBU</option>
+                <option value="kou">Kocaeli Üniversitesi</option>
+                <option value="gazi">Gazi Üniversitesi</option>
+                <option value="eru">Erciyes Üniversitesi</option>
             </select><br>
-            <input type="checkbox" id="onay" name="onay" value="onaylandı" >
+            <input type="checkbox" id="onay"  name="onay" value="onaylandı" ng-model="form.onay">
             <label for="onay">Onay İşlemi</label><br>
-            <input type="submit" value="Gönder">
+            <button type="button"  ng-click="angularKontrolEt()" class="btn btn-primary">Angular.js Kontrol</button>
+            <button type="button" onclick="jsKontrolEt()" class="btn btn-primary">JS Kontrol</button>
+            <button type="button" onclick="formTemizle()" class="btn btn-warning">Formu Temizle</button>
+            <input type="submit" value="Gönder" class="btn btn-success">
             
         </form>
         </div>
