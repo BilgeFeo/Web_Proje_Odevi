@@ -21,5 +21,15 @@ function jsKontrolEt() {
     }
 
     alert("Form verileri geçerli!");
+    var formData = {
+        isim: isim,
+        soyisim: soyisim,
+        eposta: eposta,
+        mesaj: mesaj,
+        cinsiyet: cinsiyet.value,
+        okul: okul
+    };
+    localStorage.setItem("formData", JSON.stringify(formData));
+    window.location.href = "mesajGoster.html";
     return true;
 }

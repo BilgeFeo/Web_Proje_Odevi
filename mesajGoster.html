@@ -52,48 +52,26 @@
     </header>
 
 
-
-    <div class="container ortala text-center usttemargink altmarginsil" >
-
-        <div class="cerceve iletisimbox form-group" >
-            <form onsubmit="jsKontrolEt()" id="formData" >
-
-            
-            <label for="isim">İsim:</label><br>
-            <input type="text" id="isim" name="isim" ng-model="form.isim"><br>
-            <label for="soyisim">Soyisim:</label><br>
-            <input type="text" ng-model="form.soyisim"  id="soyisim" name="soyisim" ><br>
-            <label for="eposta">E-Posta:</label><br>
-            <input type="text" ng-model="form.eposta"  id="eposta" ><br>
-            <label for="mesaj">Mesaj:</label><br>
-            <textarea id="mesaj" name="mesaj" class="w-75" rows="4" cols="50" ng-model="form.mesaj"  ></textarea><br>
-            
-            <label>Cinsiyet:</label><br>
-            <input type="radio" id="erkek"  name="cinsiyet" value="erkek" ng-model="form.cinsiyet" >
-            <label for="erkek">Erkek</label>
-            <input type="radio" id="kadın"  name="cinsiyet" value="kadın" ng-model="form.cinsiyet" >
-            <label for="kadın">Kadın</label><br>
-            <label for="okul">Okul:</label><br>
-            <select id="okul"  name="okul" ng-model="form.okul">
-                <option value="Okul Seçiniz">Okul Seçiniz</option>
-                <option value="Sakarya Üniversitesi">Sakarya Üniversitesi</option>
-                <option value="subu">SUBU</option>
-                <option value="Kocaeli Üniversitesi">Kocaeli Üniversitesi</option>
-                <option value="Gazi Üniversitesi">Gazi Üniversitesi</option>
-                <option value="Erciyes Üniversitesi">Erciyes Üniversitesi</option>
-            </select><br>
-            <input type="checkbox" id="onay"  name="onay" value="onaylandı" ng-model="form.onay">
-            <label for="onay">Onay İşlemi</label><br>
-            <button type="button"  ng-click="angularKontrolEt()" class="btn btn-primary">Angular.js Kontrol</button>
-            <button type="button" onclick="jsKontrolEt()" class="btn btn-primary">JS Kontrol</button>
-            <button type="button" onclick="formTemizle()" class="btn btn-warning">Formu Temizle</button>
-            <input type="submit" value="Gönder" class="btn btn-success">
-            
-        </form>
+    <div class="container mt-5">
+        <h2 class="text-center">Gönderilen Form Verileri</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">İsim Soyisim</h5>
+                        <p class="card-text" id="isimSoyisim"></p>
+                        <h5 class="card-title">E-Posta</h5>
+                        <p class="card-text" id="eposta"></p>
+                        <h5 class="card-title">Mesaj</h5>
+                        <p class="card-text" id="mesaj"></p>
+                        <h5 class="card-title">Okul</h5>
+                        <p class="card-text" id="okul"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
     </div>
+    
 
 
 
@@ -111,6 +89,13 @@
     </div>
 
 
-    
+    <script>
+        var formData = localStorage.getItem("formData");
+        var formObject = JSON.parse(formData);
+        document.getElementById("isimSoyisim").innerText = formObject.isim + " " + formObject.soyisim;
+        document.getElementById("eposta").innerText = formObject.eposta;
+        document.getElementById("mesaj").innerText = formObject.mesaj;
+        document.getElementById("okul").innerText = formObject.okul;
+    </script>
 </body>
 </html>
